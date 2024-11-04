@@ -8,11 +8,11 @@
 /* Bubbleboddy Neue Regular */
 @font-face {
   font-family: "Bubbleboddy Neue";
-  src: url("../public/font/Bubbleboddy/bubbleboddyneue-regular\ trial.woff2")
+  src: url("./assets/font/Bubbleboddy/bubbleboddyneue-regular\ trial.woff2")
       format("woff2"),
-    url("../public/font/Bubbleboddy/bubbleboddyneue-regular\ trial.woff")
+    url("./assets/font/Bubbleboddy/bubbleboddyneue-regular\ trial.woff")
       format("woff"),
-    url("../public/font/Bubbleboddy/bubbleboddyneue-regular\ trial.ttf")
+    url("./assets/font/Bubbleboddy/bubbleboddyneue-regular\ trial.ttf")
       format("truetype");
   font-weight: 400; /* Poids pour la version regular */
   font-style: normal;
@@ -21,11 +21,11 @@
 /* Bubbleboddy Neue Bold */
 @font-face {
   font-family: "Bubbleboddy Neue";
-  src: url("../public/font/Bubbleboddy/BubbleboddyNeue-Bold\ Trial.woff2")
+  src: url("./assets/font/Bubbleboddy/BubbleboddyNeue-Bold\ Trial.woff2")
       format("woff2"),
-    url("../public/font/Bubbleboddy/BubbleboddyNeue-Bold\ Trial.woff")
+    url("./assets/font/Bubbleboddy/BubbleboddyNeue-Bold\ Trial.woff")
       format("woff"),
-    url("../public/font/Bubbleboddy/BubbleboddyNeue-Bold\ Trial.ttf")
+    url("./assets/font/Bubbleboddy/BubbleboddyNeue-Bold\ Trial.ttf")
       format("truetype");
   font-weight: 700; /* Poids pour la version bold */
   font-style: normal;
@@ -34,11 +34,11 @@
 /* Bubbleboddy Neue ExtraBold */
 @font-face {
   font-family: "Bubbleboddy Neue";
-  src: url("../public/font/Bubbleboddy/BubbleboddyNeue-ExtraBold\ Trial.woff2")
+  src: url("./assets/font/Bubbleboddy/BubbleboddyNeue-ExtraBold\ Trial.woff2")
       format("woff2"),
-    url("../public/font/Bubbleboddy/BubbleboddyNeue-ExtraBold\ Trial.woff")
+    url("./assets/font/Bubbleboddy/BubbleboddyNeue-ExtraBold\ Trial.woff")
       format("woff"),
-    url("../public/font/Bubbleboddy/BubbleboddyNeue-ExtraBold\ Trial.ttf")
+    url("./assets/font/Bubbleboddy/BubbleboddyNeue-ExtraBold\ Trial.ttf")
       format("truetype");
   font-weight: 800; /* Poids pour la version extrabold */
   font-style: normal;
@@ -47,11 +47,11 @@
 /* Bubbleboddy Neue Light */
 @font-face {
   font-family: "Bubbleboddy Neue";
-  src: url("../public/font/Bubbleboddy/BubbleboddyNeue-Light\ Trial.woff2")
+  src: url("./assets/font/Bubbleboddy/BubbleboddyNeue-Light\ Trial.woff2")
       format("woff2"),
-    url("../public/font/Bubbleboddy/BubbleboddyNeue-Light\ Trial.woff")
+    url("./assets/font/Bubbleboddy/BubbleboddyNeue-Light\ Trial.woff")
       format("woff"),
-    url("../public/font/Bubbleboddy/BubbleboddyNeue-Light\ Trial.ttf")
+    url("./assets/font/Bubbleboddy/BubbleboddyNeue-Light\ Trial.ttf")
       format("truetype");
   font-weight: 300; /* Poids pour la version light */
   font-style: normal;
@@ -60,11 +60,11 @@
 /* Bubbleboddy Neue Thin */
 @font-face {
   font-family: "Bubbleboddy Neue";
-  src: url("../public/font/Bubbleboddy/BubbleboddyNeue-Thin\ Trial.woff2")
+  src: url("./assets/font/Bubbleboddy/BubbleboddyNeue-Thin\ Trial.woff2")
       format("woff2"),
-    url("../public/font/Bubbleboddy/BubbleboddyNeue-Thin\ Trial.woff")
+    url("./assets/font/Bubbleboddy/BubbleboddyNeue-Thin\ Trial.woff")
       format("woff"),
-    url("../public/font/Bubbleboddy/BubbleboddyNeue-Thin\ Trial.ttf")
+    url("./assets/font/Bubbleboddy/BubbleboddyNeue-Thin\ Trial.ttf")
       format("truetype");
   font-weight: 100; /* Poids pour la version thin */
   font-style: normal;
@@ -73,9 +73,9 @@
 // confortaa bold
 @font-face {
   font-family: "Comfortaa";
-  src: url("../public/font/Comfortaa/Comfortaa-Bold.woff2") format("woff2"),
-    url("../public/font/Comfortaa/Comfortaa-Bold.woff") format("woff"),
-    url("../public/font/Comfortaa/Comfortaa-Bold.ttf") format("truetype");
+  src: url("./assets/font/Comfortaa/Comfortaa-Bold.woff2") format("woff2"),
+    url("./assets/font/Comfortaa/Comfortaa-Bold.woff") format("woff"),
+    url("./assets/font/Comfortaa/Comfortaa-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -83,9 +83,9 @@
 // comfortaa regular
 @font-face {
   font-family: "Comfortaa";
-  src: url("../public/font/Comfortaa/Comfortaa-Regular.woff2") format("woff2"),
-    url("../public/font/Comfortaa/Comfortaa-Regular.woff") format("woff"),
-    url("../public/font/Comfortaa/Comfortaa-Regular.ttf") format("truetype");
+  src: url("./assets/font/Comfortaa/Comfortaa-Regular.woff2") format("woff2"),
+    url("./assets/font/Comfortaa/Comfortaa-Regular.woff") format("woff"),
+    url("./assets/font/Comfortaa/Comfortaa-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -93,9 +93,9 @@
 // Confortaa light
 @font-face {
   font-family: "Comfortaa";
-  src: url("../public/font/Comfortaa/Comfortaa-Light.woff2") format("woff2"),
-    url("../public/font/Comfortaa/Comfortaa-Light.woff") format("woff"),
-    url("../public/font/Comfortaa/Comfortaa-Light.ttf") format("truetype");
+  src: url("./assets/font/Comfortaa/Comfortaa-Light.woff2") format("woff2"),
+    url("./assets/font/Comfortaa/Comfortaa-Light.woff") format("woff"),
+    url("./assets/font/Comfortaa/Comfortaa-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
@@ -106,7 +106,8 @@
   --title: #da001e;
   --primary: #fdd90b;
   --background: #f9d0a3;
-  --light: #efefef;
+  --light: #fff;
+  --border: 2px solid var(--text);
 }
 
 // general
@@ -151,6 +152,7 @@ img {
 .m-10 {
   margin: 1rem;
 }
+
 .p-5 {
   padding: 0.5rem;
 }
