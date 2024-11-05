@@ -18,8 +18,17 @@
   </div>
   <nav class="d-flex flex-align-items-center">
     <ul class="d-flex flex-row flex-justify-content-between">
-      <li class="p-10"><a href="" class="active">accueil</a></li>
-      <li class="p-10"><a href="">à propos</a></li>
+      <li class="p-10">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >accueil</a
+        >
+      </li>
+      <li class="p-10">
+        <a routerLink="/about" routerLinkActive="active">à propos</a>
+      </li>
     </ul>
   </nav>
 </header>
