@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 // font
 /* Bubbleboddy Neue Regular */
 @font-face {
@@ -101,90 +95,11 @@
 }
 
 // variables
-:root {
-  --text: #151217;
-  --title: #da001e;
-  --primary: #fdd90b;
-  --background: #f9d0a3;
-  --light: #fff;
-  --border: 2px solid var(--text);
-}
-
-// general
-:root {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Comfortaa", sans-serif;
-  font-size: 1.6rem;
-  color: var(--text);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Bubbleboddy Neue", sans-serif;
-  margin: 1rem 0;
-  color: var(--title);
-}
-ul {
-  list-style-type: none;
-}
-a {
-  font-size: 1.6rem;
-  color: var(--text);
-  text-decoration: none;
-  &.active {
-    color: var(--title);
-  }
-}
-img {
-  max-width: 100%;
-}
-
-// utilitaires
-.m-5 {
-  margin: 0.5rem;
-}
-.m-10 {
-  margin: 1rem;
-}
-
-.p-5 {
-  padding: 0.5rem;
-}
-.p-10 {
-  padding: 1rem;
-}
-
-// Layout
-.d-flex {
-  display: flex;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-justify-content-center {
-  justify-content: center;
-}
-
-.flex-justify-content-between {
-  justify-content: space-between;
-}
-
-.flex-align-items-center {
-  align-items: center;
-}
-
-.flex-align-items-between {
-  align-items: space-between;
-}
+// :root {
+//   --text: #151217;
+//   --title: #da001e;
+//   --primary: #fdd90b;
+//   --background: #f9d0a3;
+//   --light: #fff;
+//   --border: 2px solid var(--text);
+// }
