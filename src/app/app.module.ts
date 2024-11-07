@@ -7,9 +7,10 @@ import { HeaderComponent } from './core/header/header.component';
 import { NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, AboutComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, AboutComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, NgOptimizedImage],
   providers: [],
   bootstrap: [AppComponent],
