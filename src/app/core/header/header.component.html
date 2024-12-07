@@ -18,9 +18,24 @@
     </div>
   </div>
   <nav class="flex items-center">
-    <ul class="flex content-between capitalize">
-      <li class="p-4"><a href="">accueil</a></li>
-      <li class="p-4"><a href="">à propos</a></li>
+    <ul class="flex content-between capitalize text-2xl font-bold">
+      <li class="p-4">
+        <a
+          class="hover:text-title"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >accueil</a
+        >
+      </li>
+      <li class="p-4">
+        <a
+          class="hover:text-title"
+          routerLink="/about"
+          routerLinkActive="active"
+          >à propos</a
+        >
+      </li>
     </ul>
   </nav>
 </header>

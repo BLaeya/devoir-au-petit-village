@@ -98,12 +98,6 @@
     font-style: normal;
   }
 }
-/* // variables
-// :root {
-//   --text: #151217;
-//   --title: #da001e;
-//   --primary: #fdd90b;
-//   --background: #f9d0a3;
-//   --light: #fff;
-//   --border: 2px solid var(--text);
-// } */
+.active {
+  @apply underline;
+}
