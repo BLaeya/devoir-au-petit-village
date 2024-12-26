@@ -1,5 +1,7 @@
-<header class="w-screen flex justify-between bg-primary px-8">
-  <div class="logo">
+<header
+  class="relative md:static w-screen flex justify-center border border-text lg:justify-between bg-primary px-8"
+>
+  <div class="logo size-56">
     <div class="bulles relative">
       <div
         class="absolute top-2 left-10 size-2 rounded-full border-2 border-text bg-white"
@@ -17,8 +19,17 @@
       <a href="#"></a>
     </div>
   </div>
-  <nav class="flex items-center">
-    <ul class="flex content-between capitalize text-2xl font-bold">
+  <div class="md:hidden p-8" (click)="toggleMenu()">
+    <i class="fa-solid fa-bars fa-lg" [class.hidden]="isMenuOpen"></i>
+    <i class="fa-solid fa-xmark fa-lg hidden" [class.hidden]="!isMenuOpen"></i>
+  </div>
+  <nav
+    class="absolute right-6 top-20 md:static flex flex-col md:flex-row items-center"
+    [class.hidden]="!isMenuOpen"
+  >
+    <ul
+      class="flex flex-col md:flex-row content-between capitalize md:text-4xl font-bold"
+    >
       <li class="p-4">
         <a
           class="hover:text-title"

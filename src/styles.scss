@@ -25,7 +25,7 @@
         format("woff"),
       url("./assets/font/Bubbleboddy/BubbleboddyNeue-Bold\ Trial.ttf")
         format("truetype");
-    font-weight: 700; /* Poids pour la version bold */
+    font-weight: bold; /* Poids pour la version bold */
     font-style: normal;
   }
 
@@ -38,7 +38,7 @@
         format("woff"),
       url("./assets/font/Bubbleboddy/BubbleboddyNeue-ExtraBold\ Trial.ttf")
         format("truetype");
-    font-weight: 800; /* Poids pour la version extrabold */
+    font-weight: extra-bold; /* Poids pour la version extrabold */
     font-style: normal;
   }
 
@@ -74,7 +74,7 @@
     src: url("./assets/font/Comfortaa/Comfortaa-Bold.woff2") format("woff2"),
       url("./assets/font/Comfortaa/Comfortaa-Bold.woff") format("woff"),
       url("./assets/font/Comfortaa/Comfortaa-Bold.ttf") format("truetype");
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
   }
 
