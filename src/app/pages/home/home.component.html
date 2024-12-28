@@ -20,5 +20,21 @@
       </p>
     </article>
   </section>
-  <section class="text-xl"></section>
+  <section class="text-xl">
+    <article
+      class="bg-primary border border-text p-4 w-[528px]"
+      *ngFor="let product of products"
+    >
+      <img [src]="product.image" [alt]="product.name" />
+      <h2 class="text-4xl text-title font-title">{{ product.name }}</h2>
+      <div class="flex justify-between">
+        <p>{{ product.price }} €</p>
+        <a
+          [routerLink]="['/product', product.id]"
+          class="border border-text bg-title text-white rounded-lg hover:bg-white hover:text-title"
+          >Voir</a
+        >
+      </div>
+    </article>
+  </section>
 </main>

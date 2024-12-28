@@ -8,11 +8,20 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProductsService } from './products/services/products.service';
+import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, AboutComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent,
+    HomeComponent,
+    ProductDetailComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, NgOptimizedImage],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
