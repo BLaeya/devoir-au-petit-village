@@ -1,9 +1,11 @@
-<div *ngIf="product" class="max-w-2xl mx-auto p-4">
-  <div class="bg-primary border border-text overflow-hidden">
+<div *ngIf="product" class="flex justify-center items-center p-4 lg:p-8">
+  <div
+    class="bg-primary border border-text overflow-hidden flex flex-col lg:flex-row max-w-fit min-h-[512px] justify-center items-center"
+  >
     <img
       [src]="product.image"
       [alt]="product.name"
-      class="w-full h-[512px] object-cover border-b border-text"
+      class="block w-full object-cover border-b lg:border-y lg:border-r border-text xl:border-y-0"
     />
     <div class="p-8">
       <h1 class="text-4xl font-title text-title mb-4">{{ product.name }}</h1>
