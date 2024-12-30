@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductsService } from './products/services/products.service';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { FormsModule } from '@angular/forms';
+import { SortByPricePipe } from './pipes/sort-by-price.pipe';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     HomeComponent,
     ProductDetailComponent,
+    SortByPricePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, NgOptimizedImage, FormsModule],
   providers: [ProductsService],
