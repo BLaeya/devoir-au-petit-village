@@ -1,0 +1,79 @@
+<main class="overflow-x-hidden">
+  <section
+    class="flex flex-col lg:flex-row lg:justify-center lg:items-center text-xl"
+  >
+    <div>
+      <img
+        src="assets/images/lot-figurines.jpg"
+        alt="Les figurines du village d'Astérix le Gaulois par Au petit village"
+        class="max-w-full block m-auto border-x lg:border lg:m-10 border-text"
+      />
+    </div>
+    <article class="border border-text bg-primary lg:w-2/5 h-fit">
+      <h1 class="text-5xl text-title font-title p-8">Au petit village</h1>
+      <p class="p-8">
+        Au petit village est une jeune entreprise artisanale qui fabrique des
+        figurines inspirées des personnages de la célèbre bande dessinée Astérix
+        et Obélix. Située en France, elle a pour missions de compléter les
+        collections des passionnés de l’univers Gaulois par ses figurines faites
+        à la main.
+      </p>
+    </article>
+  </section>
+  <section>
+    <h3 class="text-2xl text-title font-title py-4 pl-8">Filtre</h3>
+    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline">
+      <div class="py-4 px-8 relative">
+        <input
+          type="text"
+          placeholder="Rechercher"
+          [(ngModel)]="searchTerm"
+          (ngModelChange)="onSearchChange($event)"
+          class="w-full p-2 border border-text rounded-full focus:outline-none focus:ring-2 focus:ring-title"
+        />
+        <span class="absolute inset-y-0 right-10 flex items-center pl-2">
+          <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+        </span>
+      </div>
+      <div class="py-4 px-8 flex justify-between">
+        <button
+          (click)="sortAscending()"
+          class="p-2 m-4 bg-white text-gray-400 border-text border rounded-lg"
+        >
+          Prix croissant
+        </button>
+        <button
+          (click)="sortDescending()"
+          class="p-2 m-4 bg-white text-gray-400 border-text border rounded-lg"
+        >
+          Prix décroissant
+        </button>
+      </div>
+    </div>
+  </section>
+  <section
+    class="text-xl grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 lg:gap-x-5 gap-y-4 p-4 justify-center items-center justify-items-center"
+  >
+    <article
+      class="bg-primary border border-text p-4 sm:max-w-[528px]"
+      *ngFor="
+        let product of products
+          | sortByPrice : sortDirection
+          | filterByName : searchTerm
+      "
+    >
+      <img [src]="product.image" [alt]="product.name" />
+      <div class="h-48 flex flex-col justify-between pb-4">
+        <h2 class="text-4xl text-title font-title py-4">{{ product.name }}</h2>
+        <div class="flex justify-between items-baseline">
+          <p class="font-bold">{{ product.price }} €</p>
+          <a
+            [routerLink]="['/product', product.id]"
+            class="px-8 py-4 border border-text bg-title text-white rounded-full hover:bg-white hover:text-title"
+            >Voir</a
+          >
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
